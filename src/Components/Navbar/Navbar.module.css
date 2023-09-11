@@ -1,0 +1,37 @@
+.parent{
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+}
+.links{
+    font-size: 14px;
+              letter-spacing: 1.25px;
+              line-height: 24px;
+              font-weight: 600;
+              padding: 12px;
+              text-align: center;
+              margin: auto;
+              cursor: pointer;
+              border-radius: 5px;
+}
+.links:hover{
+    color:#ED0331;
+   background-color: #FFFAFB;
+}
+.btn1{
+    color:rgba(110, 113, 204) !important;
+    background-color: #E5FEFF;
+    padding:15px 10px 15px 10px;
+   border-radius: 8px;
+   letter-spacing: 1.2px;
+}
+.btn2{
+    padding: 15px;
+}
+.btn2:hover{
+    background-color: #FFFAFB;
+}
