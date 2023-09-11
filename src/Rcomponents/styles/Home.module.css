@@ -5,6 +5,7 @@
 .image-container {
     max-width: 100%;
     overflow: hidden;
+    /* margin-top: 400px; */
     text-align: center;
   }
   
