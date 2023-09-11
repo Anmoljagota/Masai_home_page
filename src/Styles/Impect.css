@@ -1,0 +1,11 @@
+#Main-container{
+    height: 600px;
+    background-color: #F9F9F9;
+}
+.heading{
+  font-size: 33px;
+  
+}
+.heading>span{
+    color: #ED0331;
+}
