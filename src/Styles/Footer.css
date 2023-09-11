@@ -1,0 +1,230 @@
+/* first-container start */
+#footer-container {
+  background-color: #0a0103;
+  height: auto;
+}
+.first-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  border-bottom: 1px solid #322c2e;
+}
+.child-one > img {
+  width: 50%;
+}
+.child-two {
+  display: flex;
+  flex-direction: column;
+}
+.child-two > span:first-child {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+.child-two > span:nth-child(2) {
+  font-weight: 600;
+  font-size: 17px;
+  color: #ffdb66;
+}
+.child-third {
+  margin-left: 22px;
+}
+.child-third > span {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: #ed0331;
+  cursor: pointer;
+}
+/* first container end */
+
+/* second container start */
+.second-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height: 80px;
+  border-bottom: 1px solid #322c2e;
+}
+.masai-contacts {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.masai-contacts > span {
+    padding-right:10px;
+  color: #9d999a;
+}
+/* second container end */
+
+/* third container start */
+.third-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    padding-top: 30px;
+    margin: auto;
+   
+    border-bottom: 1px solid #322c2e;
+}
+.courses{
+    padding-bottom: 60px;
+}
+.courses>div{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+}
+.courses>div>span{
+    width: auto;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.blogs{
+    margin-top: 30px;
+}
+.blogs>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.blogs>div>span{
+    text-align: left;
+    color: #AECCCD;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+}
+.blogs>div>span:hover{
+    color: #ed0331;
+}
+.community{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.community>span{
+    text-align: center;
+    color: #AECCCD;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400; 
+}
+.community>div>img{
+    width: 15%;
+}
+.community>div{
+    width: 50%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+.community>div>span{
+    color: #3470E3;
+}
+/* third container end */
+
+/* fourth container start */
+.fourth-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 40px;
+   padding-bottom: 30px;
+}
+.fourth-container>div>span{
+    color: #847E6D;
+}
+.fourth-container>div:nth-child(2)>span{
+    font-size: 13px;
+    text-decoration: underline;
+}
+/* fourth container end */
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .masai-logo,.masai-contacts>span{
+        display: none;
+     }
+    .masai-contacts{
+        grid-template-columns: repeat(6,1fr);
+        column-gap: 30px;
+        margin: auto;
+     }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .first-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .child-one > img {
+    display: none;
+  }
+  .child-third > span {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .child-third {
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  .child-two{
+    margin-bottom: 20px;
+  }
+ .masai-logo,.masai-contacts>span{
+    display: none;
+ }
+ .masai-contacts{
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows: 100px;
+    column-gap: 30px;
+    margin: auto;
+ }
+ .masai-contacts>:nth-child(1){
+   grid-area: 1/2/2/2;
+   border: 1px solid red;
+ }
+ .masai-contacts>:nth-child(2){
+    grid-area: 1/3/2/4;
+  }
+  .masai-contacts>:nth-child(3){
+    grid-area: 1/4/2/5;
+  }
+  .masai-contacts>:nth-child(4){
+    grid-area: 1/5/2/6;
+  }
+  .masai-contacts>:nth-child(6){
+    grid-area: 2/3/2/3;
+  }
+  .courses>div{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .third-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+}
