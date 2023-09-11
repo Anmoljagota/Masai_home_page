@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Flex, Button, useDisclosure, Box, Center, border } from '@chakra-ui/react';
 import { color, motion } from 'framer-motion';
 import FirstComponent from './FirstComponent';
@@ -7,7 +7,7 @@ export default function Sidebar(){
       const { isOpen, onOpen, onClose } = useDisclosure();
       const [isDragging, setIsDragging] = useState(false);
       const [dragPosition, setDragPosition] = useState({ x: 0, y: 0 });
-      const [status,setStatus]=useState(1)
+      const [status,setStatus]=useState(null)
     
       const handleDragStart = (e) => {
         setIsDragging(true);
@@ -32,7 +32,9 @@ export default function Sidebar(){
           }
         }
       };
-    
+    useEffect(()=>{
+      setStatus(1)
+    },[])
       const handleDragEnd = () => {
         setIsDragging(false);
       };
@@ -46,6 +48,7 @@ export default function Sidebar(){
         height={"600px"}
         justifyContent={"space-around"}
         alignItems={"center"}
+        margin={"auto"}
         css={{flexDirection: 'column', // Default direction for small screens
         width: '100%',
         '@media (min-width: 768px)': {
@@ -56,8 +59,9 @@ export default function Sidebar(){
           id="draggable-container"
           alignItems={"center"}
           justifyContent={"center"}
-        
+          backgroundColor={"white"}
           css={{
+
             flexDirection: 'row', // Default direction for small screens
             width: '100%',
             '@media (min-width: 768px)': {
@@ -70,10 +74,6 @@ export default function Sidebar(){
                 alignItems:"center"
             },
           }}
-         
-          
-          bg="gray.200"
-         
           borderRadius="md"
           overflow="hidden"
           userSelect="none"
@@ -83,30 +83,30 @@ export default function Sidebar(){
           onMouseLeave={handleDragEnd}
           position="relative"
         >
-          <Button size={"md"} w={"80%"} h={"50px"}_hover={{color:"#ed3d5f",borderColor:
+          <Button size={"md"}w={"80%"}  h={"20px"} color={"black"}  _hover={{color:"#ed3d5f",borderColor:
         "#ed3d5f", border:"1px solid #ed3d5f"}} _focus={{color:"#ed3d5f",borderColor:
-        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={20} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(1)}>
+        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={10} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"}  onClick={()=>handleStatus(1)}>
             {/* <Box h={20} w={30}  display={"flex"} justifyContent={"center"} alignItems={"center"} p={8} m={5} borderRadius={5}  >1</Box> */}
             Career Launch
           </Button>
-          <Button size={"md"}w={"80%"}  h={"50px"}  _hover={{color:"#ed3d5f",borderColor:
+          <Button size={"md"}w={"80%"}  h={"20px"} color={"black"}  _hover={{color:"#ed3d5f",borderColor:
         "#ed3d5f", border:"1px solid #ed3d5f"}} _focus={{color:"#ed3d5f",borderColor:
-        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={20} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(2)}>
+        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={10} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(2)}>
             Nurture Ambition
           </Button>
-          <Button size={"md"}w={"80%"}  h={"50px"}  _hover={{color:"#ed3d5f",borderColor:
+          <Button size={"md"}w={"80%"}  h={"20px"} color={"black"}  _hover={{color:"#ed3d5f",borderColor:
         "#ed3d5f", border:"1px solid #ed3d5f"}} _focus={{color:"#ed3d5f",borderColor:
-        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={20} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(3)}>
+        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={10} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(3)}>
             Practice Based
           </Button>
-          <Button size={"md"}w={"80%"}  h={"50px"}  _hover={{color:"#ed3d5f",borderColor:
+          <Button size={"md"}w={"80%"}  h={"20px"} color={"black"} _hover={{color:"#ed3d5f",borderColor:
         "#ed3d5f", border:"1px solid #ed3d5f"}} _focus={{color:"#ed3d5f",borderColor:
-        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={20} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(4)}>
+        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={10} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(4)}>
             Industry Readiness
           </Button>
-          <Button size={"md"}w={"80%"}  h={"50px"}  _hover={{color:"#ed3d5f",borderColor:
+          <Button size={"md"}w={"80%"}  h={"20px"} color={"black"}  _hover={{color:"#ed3d5f",borderColor:
         "#ed3d5f", border:"1px solid #ed3d5f"}} _focus={{color:"#ed3d5f",borderColor:
-        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={20} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(5)}>
+        "#ed3d5f", border:"1px solid #ed3d5f"}} border={0.8} p={10} borderRadius={15} fontSize={"18px"} fontWeight={700} colorScheme={status==1?"#ed3d5f":"gray"} onClick={()=>handleStatus(5)}>
             Holistic Development
           </Button>
           <Box
