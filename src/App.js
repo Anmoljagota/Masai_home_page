@@ -11,6 +11,8 @@ import Community from './Components/TechCommunity/Community';
 import Partners from './Components/Partners/Partners';
 import Footer from './ComponentsFooter/Footer';
 import StudentImpact from './Components/StudentImpact';
+import Elevate from './ComponentsFooter/Elevate';
+import Certificate from './ComponentsFooter/Certificate';
 
 
 function App() {
@@ -22,8 +24,9 @@ function App() {
     <Community/>
     <Partners/>
     <StudentImpact/>
-{/* <Footer/> */}
-    
+    <Elevate/>
+    <Certificate/>
+    <Footer/>
 
     </div>
   );
