@@ -13,17 +13,23 @@ import Footer from './ComponentsFooter/Footer';
 import StudentImpact from './Components/StudentImpact';
 import Elevate from './ComponentsFooter/Elevate';
 import Certificate from './ComponentsFooter/Certificate';
+import Alumni from './Rcomponents/Alumni';
+import Courses from './Rcomponents/Courses';
 
 
 function App() {
   return (
     <div className="App">
     <Navbar/>
+    
     <Home/>
+    <Alumni/>
     <Sidebar/>
+    <Courses/>
     <Community/>
     <Partners/>
     <StudentImpact/>
+    <br/>
     <Elevate/>
     <Certificate/>
     <Footer/>
