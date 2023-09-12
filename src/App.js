@@ -10,11 +10,14 @@ import Navbar from './Components/Navbar/Navbar';
 import Community from './Components/TechCommunity/Community';
 import Partners from './Components/Partners/Partners';
 import Footer from './ComponentsFooter/Footer';
+
 import StudentImpact from './Components/StudentImpact';
+
 import Elevate from './ComponentsFooter/Elevate';
 import Certificate from './ComponentsFooter/Certificate';
 import Alumni from './Rcomponents/Alumni';
 import Courses from './Rcomponents/Courses';
+
 
 
 function App() {
@@ -23,22 +26,19 @@ function App() {
     <Navbar/>
     <Home/>
     <Alumni/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
     <Sidebar/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <Courses/>
     <Community/>
     <Partners/>
     <StudentImpact/>
-    <br/>
-    <Elevate/>
+    <Elevate/>    
     <Certificate/>
     <Footer/>
-
     </div>
   );
 }

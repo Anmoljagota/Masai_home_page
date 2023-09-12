@@ -60,17 +60,17 @@ export default function Sidebar(){
           alignItems={"center"}
           justifyContent={"center"}
           backgroundColor={"white"}
+          gap={10}
           css={{
 
             flexDirection: 'row', // Default direction for small screens
+            justifyContent:"space-between",
             width: '100%',
             '@media (min-width: 768px)': {
               flexDirection: 'column', // Change direction for large screens
               width: '20%',
-              
               height:"100%",
                 justifyContent:"space-evenly",
-                
                 alignItems:"center"
             },
           }}
@@ -120,7 +120,7 @@ export default function Sidebar(){
             display={isDragging ? 'block' : 'none'}
           />
         </Flex>
-        <Box width={"70%"} height={"100%"} >
+        <Box width={"70%"} height={"100%"} display={["none","none","none","block"]}>
           <FirstComponent a={status}/>
         </Box>
         </Box>
