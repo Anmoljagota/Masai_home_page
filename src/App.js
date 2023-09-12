@@ -17,7 +17,6 @@ import Courses from './Rcomponents/Courses';
 import Elevate from './ComponentsFooter/Elevate';
 import Certificate from './ComponentsFooter/Certificate';
 
-import StudentImpact from './Components/StudentImpact';
 
 
 
