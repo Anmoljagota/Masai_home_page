@@ -68,7 +68,7 @@ const Community = () => {
         </Center>
       </span>
       <Crousel images={images} view={4} space={30} />
-      <button className={Styles.btn}>JOIN OUR COMMUNITY</button>
+      <Button text={"JOIN OUR COMMUNITY"} size={"14px"} padding={"12px 16px"} radius={"8px"} margin={"80px"}/>
     </div>
   );
 };
