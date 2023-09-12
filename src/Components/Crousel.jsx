@@ -32,7 +32,7 @@ const Crousel = ({images,view,space}) => {
               key={index}
             >
                 {view===4 ?
-                    <Image src={item.image} width="100%" height="100%"/>:<Box  width="75%" borderRadius="10px"  boxShadow="rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px">
+                   <Image src={item.image} width="100%" height="100%"/>:<Box p="10px" borderRight="24px"  width="75%" borderRadius="10px"  boxShadow="rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px">
                          <Image src={item.image} width="100%" height="100%"/>
                     </Box>
                 }
