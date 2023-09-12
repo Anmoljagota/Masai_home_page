@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./Community.module.css";
-import { Center, Image } from "@chakra-ui/react";
+import { Button, Center, Image } from "@chakra-ui/react";
 import Crousel from "../Crousel";
 const Community = () => {
   const images = [
@@ -68,7 +68,7 @@ const Community = () => {
         </Center>
       </span>
       <Crousel images={images} view={4} space={30} />
-      <button className={Styles.btn}>JOIN OUR COMMUNITY</button>
+      <Button text={"JOIN OUR COMMUNITY"} size={"14px"} padding={"12px 16px"} radius={"8px"} margin={"80px"}/>
     </div>
   );
 };
