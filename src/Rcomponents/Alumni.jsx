@@ -49,7 +49,7 @@ const Alumni = () => {
   const currentItem = dataObjects[currentIndex];
 
   return (
-    <Box w={"100%"} mt={10} >
+    <Box w={"100%"} mt={20} >
       <Flex
         w={"85%"}
         margin={"auto"}
