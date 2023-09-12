@@ -21,9 +21,14 @@ function App() {
   return (
     <div className="App">
     <Navbar/>
-    
     <Home/>
     <Alumni/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
     <Sidebar/>
     <Courses/>
     <Community/>
