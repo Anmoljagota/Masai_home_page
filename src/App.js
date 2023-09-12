@@ -12,11 +12,11 @@ import Partners from './Components/Partners/Partners';
 import Footer from './ComponentsFooter/Footer';
 
 import StudentImpact from './Components/StudentImpact';
-import Alumni from './Rcomponents/Alumni';
-import Courses from './Rcomponents/Courses';
+
 import Elevate from './ComponentsFooter/Elevate';
 import Certificate from './ComponentsFooter/Certificate';
-
+import Alumni from './Rcomponents/Alumni';
+import Courses from './Rcomponents/Courses';
 
 
 
@@ -27,7 +27,11 @@ function App() {
     <Home/>
     <Alumni/>
     <Sidebar/>
-
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <Courses/>
     <Community/>
     <Partners/>
@@ -35,9 +39,6 @@ function App() {
     <Elevate/>    
     <Certificate/>
     <Footer/>
-
-
-
     </div>
   );
 }
