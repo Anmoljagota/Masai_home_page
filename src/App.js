@@ -10,6 +10,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Community from './Components/TechCommunity/Community';
 import Partners from './Components/Partners/Partners';
 import Footer from './ComponentsFooter/Footer';
+import StudentImpact from './Components/StudentImpact';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     <Sidebar/>
     <Community/>
     <Partners/>
-<Footer/>
+    <StudentImpact/>
+{/* <Footer/> */}
     
 
     </div>
