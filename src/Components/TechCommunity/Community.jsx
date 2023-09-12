@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./Community.module.css";
-import { Button, Center, Image } from "@chakra-ui/react";
+import {  Center, Image } from "@chakra-ui/react";
+import Button from "../Button";
 import Crousel from "../Crousel";
 const Community = () => {
   const images = [
