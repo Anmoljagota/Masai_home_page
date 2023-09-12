@@ -1,5 +1,16 @@
 .parent{
+    /* margin-top: 15px; */
+    width: 100%;
     padding: 10px;
+
+    /* border: 2px solid blue; */
+    position: sticky;
+    top: 0;
+    /* z-index: 5; */
+    background-color: white;
+}
+.mainparent{
+
 
     margin-top: 15px;
 
@@ -12,11 +23,15 @@
 }
 .mainparent{
 
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    padding: 10px;
+  
     margin: auto;
+    width: 95%;
+    /* border: 2px solid red; */
 }
 .links{
     font-size: 14px;
@@ -45,4 +60,29 @@
 }
 .btn2:hover{
     background-color: #FFFAFB;
+}
+.drawer{
+    display: none;
+}
+
+.mainlink{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+@media screen and (width<=1000px) {
+    .drawer{
+        display: block;
+    }
+    .mainlink{
+        display: none;
+    }
+    .parent{
+        display: flex;
+        /* justify-content: flex-start; */
+    }
+   
 }

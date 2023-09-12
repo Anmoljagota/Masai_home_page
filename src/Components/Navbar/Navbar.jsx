@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button, HStack, Image, Stack } from "@chakra-ui/react";
+import Drawer from "./Drawer";
 import Styles from "./Navbar.module.css";
 const Navbar = () => {
   const links = [
@@ -11,25 +12,34 @@ const Navbar = () => {
     { title: "HIRE FROM US" },
   ];
   return (
-    <nav className={Styles.parent}>
-      <Image src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" />
-      <ul
-        style={{
-          width: "60%",
-          margin: "auto",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          height: "60px",
-        }}
+      <nav className={Styles.parent}>
+         <Box className={Styles.mainparent}>
+
+      <Box
+        display="flex"
+        widht="20%"
+        justifyContent="center"
+        alignItems="center"
       >
+        <Box className={Styles.drawer}>
+          <Drawer links={links} />
+        </Box>
+
+        <Image src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" />
+      </Box>
+      <ul className={Styles.mainlink}>
         {links.map((ele, i) => (
           <li key={i} className={Styles.links}>
             {ele.title}
           </li>
         ))}
       </ul>
-      <HStack spacing="20px" fontSize="14px" fontWeight="600">
+      <HStack
+        spacing="20px"
+        fontSize="14px"
+        fontWeight="600"
+        className={Styles.Hstack}
+      >
         <button className={Styles.btn1}>REFER & EARN</button>
         <Button
           colorScheme="red"
@@ -41,6 +51,7 @@ const Navbar = () => {
           SIGN UP
         </Button>
       </HStack>
+        </Box>
     </nav>
   );
 };
